@@ -1,0 +1,226 @@
+ 
+Python Functions
+ 
+1. Prime Number Finder
+ 
+   * Function that returns all prime numbers up to `n`.
+   * Input: `n = 20`
+   * Output: `[2, 3, 5, 7, 11, 13, 17, 19]`
+ 
+2. Palindrome Checker
+ 
+   * Check if a string is palindrome (ignoring spaces & case).
+   * Input: `"Never odd or even"`
+   * Output: `True`
+ 
+3. Anagram Checker
+ 
+   * Function checks if two words are anagrams.
+   * Input: `"listen", "silent"`
+   * Output: `True`
+ 
+ 
+ 
+4. Count Vowels & Consonants
+ 
+   * Return count of vowels & consonants.
+   * Input: `"hello"`
+   * Output: `Vowels=2, Consonants=3`
+ 
+5. Longest Word Finder
+ 
+* Return longest word in a sentence.
+* Input: `"Python is amazing"`
+* Output: `"amazing"`
+ 
+Python Modules (5 challenges)
+ 
+1. Random Password Generator (`random`, `string`)
+ 
+* Input: `length=6`
+* Output: `"aB9@xQ"`
+ 
+2. Simple Calculator with `math`
+ 
+* Perform sqrt, factorial, sin, cos.
+* Input: `sqrt(25)`
+* Output: `5.0`
+ 
+3. Word Frequency Counter (`collections.Counter`)
+ 
+* Input: `"cat dog cat"`
+* Output: `{'cat':2,'dog':1}`
+ 
+ 
+4. Weather Simulator (`random`)
+ 
+* Input: None
+* Output: `"Weather: Sunny, Temp: 32°C"`
+ 
+5. Timer Program (`time`)
+ 
+* Input: `countdown(5)`
+* Output:
+ 
+  ```
+  5  
+  4  
+  3  
+  2  
+  1  
+  Time’s up!
+  ```
+ 
+Python OOPs (5 challenges)
+ 
+1. Bank Account Class
+ 
+Attributes:
+ 
+* `balance` → stores the current money in the account
+* `owner` (optional) → name of account holder
+ 
+Methods:
+ 
+* `deposit(amount)` → adds money to balance
+* `withdraw(amount)` → subtracts money if enough funds
+* `get_balance()` → returns balance
+ 
+Example:
+ 
+```python
+acc = BankAccount(100)   # initial balance = 100
+acc.deposit(50)          # balance = 150
+acc.withdraw(30)         # balance = 120
+print(acc.get_balance())
+```
+ 
+Output:
+ 
+```
+Balance: 120
+```
+ 
+---
+ 
+2. Student Class with Average
+ 
+Attributes:
+ 
+* `name` → student name
+* `marks` → list of student marks `[90, 80, 85]`
+ 
+Methods:
+ 
+* `get_average()` → returns average marks
+* `add_mark(mark)` → add new score
+* `get_highest()` → return highest mark
+* `get_lowest()` → return lowest mark
+ 
+Example:
+ 
+```python
+s = Student("Tom", [90, 80, 85])
+print(s.get_average())   # (90+80+85)/3 = 85.0
+s.add_mark(95)           # marks = [90,80,85,95]
+print(s.get_highest())   # 95
+```
+ 
+Output:
+ 
+```
+85.0
+95
+```
+ 
+---
+ 
+3. Employee Bonus System
+ 
+Attributes:
+ 
+* `name` → employee name
+* `salary` → base salary
+* `role` → role of employee (e.g., Manager, Developer, Intern)
+ 
+Methods:
+ 
+* `bonus()` → calculates bonus depending on role:
+ 
+  * Manager → 20% of salary
+  * Developer → 10% of salary
+  * Intern → 5% of salary
+ 
+Example:
+ 
+```python
+m = Manager("Alice", 50000)
+print(m.bonus())
+```
+ 
+Output:
+ 
+```
+10000
+```
+ 
+---
+ 
+4. Shape Area Calculator
+ 
+Base Class (Shape):
+ 
+*Attribute: `name`
+*Method: `area()` → to be overridden by subclasses
+ 
+Subclasses:
+ 
+* `Circle(radius)` → area = π × r²
+* `Rectangle(width, height)` → area = width × height
+ 
+Example:
+ 
+```python
+c = Circle(7)
+print(c.area())
+r = Rectangle(4, 5)
+print(r.area())
+```
+ 
+Output:
+ 
+```
+153.94
+20
+```
+ 
+---
+ 
+5. E-commerce Order Class
+ 
+Attributes:
+ 
+* `items` → dictionary of items `{name: price}`
+ 
+Methods:
+ 
+* `add(item, price)` → adds an item to order
+* `remove(item)` → removes item
+* `calculate_total()` → returns total price of all items
+* `show_items()` → lists all items in order
+ 
+Example:
+ 
+```python
+order = Order()
+order.add("Shirt", 500)
+order.add("Shoes", 1500)
+print(order.calculate_total())
+```
+ 
+Output:
+ 
+```
+Total = 2000
+```
+ 
