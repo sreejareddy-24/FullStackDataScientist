@@ -25,17 +25,26 @@
 13. Problem: Input 3 numbers, print the largest.
 
 14. Problem: Count how many times each character appears in a string.
+
 15. Problem: Calculate electricity bill:
 First 100 units → ₹5/unit
 Next 100 units → ₹7/unit
 Above 200 units → ₹10/unit
+
 16. Problem: Sort a list of names in ascending order.
+
 17. Problem: Input: 1234 → Output: 4321
+
 18. Problem: Given a list, count positive, negative, and zero numbers.
+
 19. Problem: User has 3 attempts to enter correct PIN.
+
 20. Problem: Write a program that asks for two numbers and divides them. Handle division by zero.
+
 21. Problem: Write a program that handles both ValueError (invalid input) and ZeroDivisionError.
+
 22. Problem: If withdrawal amount is greater than balance, raise an exception.
+
 23. Problem: Calculate total price, handle invalid input, and always show "Bill processing finished".
 • First 100 units → ₹5/unit
 • Next 100 units → ₹7/unit
